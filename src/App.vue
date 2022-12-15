@@ -1,13 +1,10 @@
 <template>
   <Navbar />
-  <div id="nav">
-    <router-link to="/">Главная страница</router-link> |
-    <router-link to="/about">О магазине</router-link>
-  </div>
-  <router-view
+  <router-view v-if="categories && products"
   :baseURL="baseURL"
   :categories="categories"
   :products="products"
+  @fetchData="fetchData"
   >
   </router-view>
 </template>
@@ -20,12 +17,13 @@ export default {
   data() {
     return {
       baseURL : "http://10.50.50.99:8085/",
-      products: [],
-      categories: []
+      products: null,
+      categories: null
     }
   },
   methods: {
     async fetchData() {
+
       // api call to get all the categories
       await axios.get(this.baseURL + "category/")
       .then(res => {

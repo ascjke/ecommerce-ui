@@ -22,7 +22,7 @@
 <script>
 import CategoryBox from "../../components/Category/CategoryBox.vue";
 export default {
-  name: "Category",
+  name: "AdminCategory",
   props:["categories"],
   components: { CategoryBox },
   data() {
