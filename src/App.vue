@@ -1,19 +1,22 @@
 <template>
   <Navbar />
-  <router-view v-if="categories && products"
+  <router-view v-if="categories && products" style="min-geight: 60vh"
   :baseURL="baseURL"
   :categories="categories"
   :products="products"
   @fetchData="fetchData"
   >
   </router-view>
+  <!-- footer -->
+  <Footer />
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
 import axios from 'axios';
 export default {
-  components: { Navbar },
+  components: { Navbar, Footer },
   data() {
     return {
       baseURL : "http://10.50.50.99:8085/",
