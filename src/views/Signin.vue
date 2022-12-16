@@ -45,8 +45,9 @@ export default {
 
       await axios
       .post(`${this.baseURL}user/signin`, body)
-      .then(() => {
+      .then((res) => {
           this.$router.replace("/");
+          localStorage.setItem("token", res.data.token);
           swal({
             text: "You are sign in",
             icon: "success"
