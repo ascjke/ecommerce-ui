@@ -9,6 +9,8 @@ import EditProduct from '../views/Product/EditProduct'
 import Admin from '../views/Admin'
 import ShowProductDetails from '../views/Product/ShowDetails'
 import ListProducts from '../views/Product/ListProducts'
+import Signup from '../views/Signup'
+import Signin from '../views/Signin'
 
 const routes = [
   {
@@ -64,6 +66,19 @@ const routes = [
     path: '/product/show/:id',
     name: 'ShowProductDetails',
     component: ShowProductDetails
+  },
+
+  // signup page
+  {
+    path: '/signup',
+    name: 'Signup',
+    component: Signup
+  },
+  // signin page
+  {
+    path: '/signin',
+    name: 'Signin',
+    component: Signin
   }
 ]
 

@@ -3,8 +3,8 @@
         <div class="row pt-5">
             <div class="col-md-1"></div>
             <!-- display image -->
-            <div class="col-md4 col-12">
-                <img :src="product.imageUrl" class="img-fluid">
+            <div class="col-md-4 col-12">
+                <img :src="product.imageUrl" class="img-fluid" />
             </div>
             <!-- display product details -->
             <div class="col-md-6 col-12 pt-3 pt-md-0">
@@ -12,7 +12,7 @@
                 <h6 class="category font-italic">
                     {{ category.categoryName }}
                 </h6>
-                <h6 class="font-weight-bold">${{ product.price }}</h6>
+                <h6 class="font-weight-bold">Стоимость: ${{ product.price }}</h6>
                 <p>
                     {{ product.description }}
                 </p>
@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style>
-  .category {
+.category {
     font-weight: 400;
-  }
+}
 </style>

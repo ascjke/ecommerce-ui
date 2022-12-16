@@ -10,8 +10,11 @@
     </div>
 </template>
 <script>
-export default {};
+export default {
+
+};
 </script>
+
 <style>
 .btn {
     margin-bottom: 20px;

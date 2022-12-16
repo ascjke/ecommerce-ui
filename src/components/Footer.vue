@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <div class="container" pt-5>
+        <div class="container pt-5">
             <div class="row">
                 <div class="col-md-3 col-6">
                     <ul style="list-style-type: none">

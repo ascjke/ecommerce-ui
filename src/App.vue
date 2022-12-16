@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <router-view v-if="categories && products" style="min-geight: 60vh"
+  <router-view v-if="categories && products" style="min-height: 60vh"
   :baseURL="baseURL"
   :categories="categories"
   :products="products"
