@@ -27,7 +27,7 @@ export default {
   components: { CategoryBox },
   data() {
     return {
-      baseURL: "http://10.50.50.99:8085/",
+      baseURL: "http://localhost:8085/",
     };
   },
   methods: {

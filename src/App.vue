@@ -19,7 +19,7 @@ export default {
   components: { Navbar, Footer },
   data() {
     return {
-      baseURL : "http://10.50.50.99:8085/",
+      baseURL : "http://localhost:8085/",
       products: null,
       categories: null
     }

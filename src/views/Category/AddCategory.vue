@@ -52,7 +52,7 @@ export default {
         imageUrl: this.imageUrl,
       };
 
-      const baseURL = "http://10.50.50.99:8085/";
+      const baseURL = "http://localhost:8085/";
       console.log(JSON.stringify(newCategory));
       axios({
         method: "post",
