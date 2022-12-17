@@ -12,6 +12,7 @@ import ListProducts from '../views/Product/ListProducts'
 import Signup from '../views/Signup'
 import Signin from '../views/Signin'
 import Wishlist from '../views/Product/Wishlist'
+import Cart from '../views/Cart'
 
 const routes = [
   {
@@ -86,6 +87,12 @@ const routes = [
     path: '/wishlist',
     name: 'Wishlist',
     component: Wishlist
+  },
+  // cart
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart
   }
 ]
 
