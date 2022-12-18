@@ -99,7 +99,8 @@ export default {
             swal({
               text: "Product added to cart",
               icon: "success"
-            })
+            });
+            this.$emit("fetchData");
           }
         }).catch(err => {
           console.log('err', err);

@@ -52,6 +52,8 @@ export default {
             text: "You are sign in",
             icon: "success"
           });
+          this.$emit("fetchData");
+          this.$router.push({name: "Home"});
         })
         .catch(err => console.log('err', err));
     }
