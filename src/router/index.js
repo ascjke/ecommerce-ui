@@ -13,6 +13,10 @@ import Signup from '../views/Signup'
 import Signin from '../views/Signin'
 import Wishlist from '../views/Product/Wishlist'
 import Cart from '../views/Cart'
+import Success from '../views/Payment/Success'
+import Failed from '../views/Payment/Failure'
+import Checkout from '../views/Checkout/Checkout'
+
 
 const routes = [
   {
@@ -93,7 +97,22 @@ const routes = [
     path: '/cart',
     name: 'Cart',
     component: Cart
-  }
+  },
+  {
+    path: '/payment/success',
+    name: 'PaymentSuccess',
+    component: Success
+  },
+  {
+    path: '/payment/failed',
+    name: 'PaymentFail',
+    component: Failed
+  },
+  {
+    path: '/checkout',
+    name: 'Checkout',
+    component: Checkout
+  },
 ]
 
 const router = createRouter({
